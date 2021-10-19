@@ -2,13 +2,13 @@ $(".submit-button").click(function() {
     //Store user input in a variable
     let mAnswer = $(".m-answer").val();
     let seasonAnswer = $(".season-answer").val();
-    let mSection = "";
-    
-    if (mAnswer < 15) {
-        mSection = "You have some M's";
-        
-    } else if (mAnswer < 10) {
+    let mSection = "";  
+   
+    if (mAnswer < 10) {
         mSection = "Let's get more M's";
+        
+    } else if (mAnswer < 15) {
+        mSection = "You have some M's"; 
     }
       
      else if (mAnswer >= 25 && seasonAnswer==="summer") {
